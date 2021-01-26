@@ -31,7 +31,7 @@ app.post("/",function(req, res){
     auth: "sudhanshu:1ca3f8f07884b382c790cb46e6dfb5e7-us7"
   };
  const request=https.request(url,options,function(response){
-if(response.statuCode === 200)
+if(response.statusCode === 200)
 {
   res.sendFile(__dirname + "/success.html");
 }
